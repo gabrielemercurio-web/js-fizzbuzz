@@ -8,19 +8,19 @@ for (var i = 0; i < 101; i++) {
     console.log(i);
 
     // Calcolare i numeri che sono multipli di 3
-    if (i == (i % 3 == 0)) {
+    if ((i % 3 === 0) && (i % 5 === 0)) {
         // Se multiplo di 3 scrivere la parola 'Fizz' al posto del numero multiplo di 3
-        console.log('Fizz');
+        console.log('Fizz' + 'Buzz');
 
     // Calcolare i numeri che sono multipli di 5
-}   else if (i == (i % 5 == 0)) {
+}   else if (i % 5 === 0) {
         // Se multiplo di 5 scrivere la parola 'Buzz' al posto del numero multiplo di 5
         console.log('Buzz');
 
     // Calcolare i numeri che sono multipli di 3 e di 5
-}   else if ((i == (i % 3 == 0)) && (i == (i % 5 == 0))) {
+}   else if (i % 3 === 0) {
         // Se multiplo sia di 3 che di 5 scrivere la parola 'FizzBuzz' al posto del numero multiplo di 3 e di 5
-        console.log('FizzBuzz');
+        console.log('Fizz');
     } else {
         // Scrivere numeri da 0 a 100 in sequenza, tranne i multipli di 3 e di 5
     }
